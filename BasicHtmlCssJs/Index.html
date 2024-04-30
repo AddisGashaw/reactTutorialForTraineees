@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Example</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <h1 id="heading">Welcome To SDC</h1>
+
+  <!-- <button id="changeColorBtn">Click Me</button> -->
+  <button id="changeColorBtn" onclick="toggleHeading()">Change Color</button>
+
+<!-- method one inside js-->
+<!-- Internal JavaScript: In this approach, you include 
+    the JavaScript code directly within
+     the <script> tag in the HTML file. Here's an example: -->
+        <script>
+            function toggleHeading() {
+              var heading = document.getElementById('heading');
+              var originalText = heading.innerText;
+        
+              if (heading.style.color === 'red') {
+                heading.style.color = 'black';
+                heading.innerText = originalText;
+              } else {
+                heading.style.color = 'red';
+                heading.innerText = 'We hope you will doing well';
+              }
+            }
+          </script>
+
+
+  <!-- method two External Js -->
+<!-- External JavaScript:
+ In this approach, you place the JavaScript code in a separate external 
+ file with a .js extension -->
+
+
+ 
+ <!-- <script src="index.js"></script> -->
+
+</body>
+</html>
